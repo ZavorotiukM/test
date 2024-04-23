@@ -1,0 +1,51 @@
+:root{
+    --borderColor: rgba(128, 128, 128, 0.221);
+}
+
+.sidebar{
+    border: 1px solid var(--borderColor);
+    width: 20%;
+    height: calc(100dvh - 65px);
+}
+
+
+.events{
+    border: 1px solid var(--borderColor);
+    width: 80%;
+}
+
+
+.filterBtn{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* * Medium Screen */
+
+@media all and (min-width: 767px) and (max-width: 1100px) {
+    
+    .sidebar{
+        width: 25%;
+    }
+    
+    .events{
+        width: 75%;
+    }
+    
+}
+
+
+/* * Large Screen */
+
+@media all and  (max-width: 766px) {
+    
+    .events{
+        width: 100%;
+    }
+    
+}
